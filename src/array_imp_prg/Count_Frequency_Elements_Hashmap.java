@@ -6,7 +6,9 @@ import java.util.Map;
 public class Count_Frequency_Elements_Hashmap {
 
 	public static void main(String[] args) {
-		//count frequency of all elements of array
+		//1. count frequency of all elements of array
+		//2. print duplicate elements in array
+		//3. print first non repeating element of array
 		
 				int a[] = {1,1,2,2,3,4,4,5,1,7};
 				Map<Integer,Integer> hm = new HashMap();
@@ -24,7 +26,10 @@ public class Count_Frequency_Elements_Hashmap {
 			
 				for(int k: hm.keySet())
 				{
+					if(hm.get(k)>1)
+					{
 					System.out.println("number " + k + " frequency " + hm.get(k));
+					}
 				}
 					
 

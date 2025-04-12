@@ -1,14 +1,11 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+package array_imp_prg;
 
-public class practice {
+public class prg18_frequency_of_number {
 
 	public static void main(String[] args) {
-		
-
-            
-		int a[] = {1,1,2,3,4,4,5,1,5,5};
+		//print duplicates
+		//print duplicates and their frequecy
+		int a[] = {1,1,2,2,3,4,4,5,1};
 		int c=1;
 		for(int i=0;i<a.length;i++)
 		{
@@ -26,13 +23,9 @@ public class practice {
 			}
 			if(c>1)
 			{
-			System.out.println(a[i]);
-			c=1;
+			System.out.println(a[i] + " " + c);
 			}
-	}
-		
-
+			c=1;
 	}
 	}
-
-
+}

@@ -8,7 +8,7 @@ public class prg_13_armstrong {
 	      while(n>0)
 	      {
 	        r = n%10;
-	        sum = (int)(sum + Math.pow(r, 3));
+	        sum = sum + (int)(Math.pow(r, 3));
 	        n= n/10;
 	      }
 	      System.out.println(sum);

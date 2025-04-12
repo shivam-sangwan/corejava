@@ -27,35 +27,9 @@ public class prg4_remove_duplicate_from_sorted_array {
 //			System.out.println(b[i]);
 //		}
 		
-       // count duplicate elements in an array
-//		int a[] = {1,6,2,5,3,6,1,4,5};
-//		int count = 0;
-//		for(int i=0;i<a.length;i++)
-//		{
-//			for(int j=i+1;j<a.length;j++)
-//			{
-//				if(a[j]==a[i])
-//				{
-//					count++;
-//				}
-//				
-//			}
-//		}
-//		System.out.println("number of duplicate elements: " + count);
+  
 		
-		//print duplicate elements of an array
-//		int a[] = {1,6,2,5,3,6,1,4,5};
-//		for(int i=0;i<a.length;i++)
-//		{
-//			for(int j=i+1;j<a.length;j++)
-//			{
-//				if(a[j]==a[i])
-//				{
-//					System.out.println(a[i]);;
-//				}
-//				
-//			}
-//		}
+
 		
 		
 		//check if an array contains duplicate
