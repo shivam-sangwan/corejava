@@ -4,7 +4,6 @@ print duplicate: hashmap
 Without hashmap:
 print duplicate + frequency: selection sort, make duplicate '-1'
 print duplicate: selection sort, make duplicate '-1'
-
 remove duplicate: selection sort, make duplicate '-1', use new array b[]
 
 remove duplicate from sorted array: bubble sort, 1 for loop, use new array b[]
