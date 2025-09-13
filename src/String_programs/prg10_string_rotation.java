@@ -7,8 +7,8 @@ public class prg10_string_rotation {
 		String s1 = "waterbottle";   
 		String s2 = "erbottlewat";
 		
-		String s3 = s1+s1;
-		if(s3.contains(s2))
+		s1 = s1+s1;
+		if(s1.contains(s2))
 		{
 			System.out.println("rotation");
 		}
