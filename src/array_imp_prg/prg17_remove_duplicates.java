@@ -37,3 +37,35 @@ public class prg17_remove_duplicates {
 	}
 
 }
+
+//javascript
+let a = [1,1,2,3,4,3];
+let k =0;
+let b = new Array(a.length);
+for(let i=0;i<a.length;i++)
+{
+  for(let j=i+1;j<a.length;j++)
+  {
+    if(a[j]===a[i])
+    {
+      a[j] = -1;
+    }
+  }
+}
+
+for(let i=0;i<a.length;i++)
+{
+  if(a[i]!==-1)
+  {
+    b[k]=a[i];
+    k++;
+  }
+}
+
+for(let i=0;i<k;i++)
+{
+  console.log(b[i]);
+  }
+
+
+		
