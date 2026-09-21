@@ -22,21 +22,26 @@ public class prg2_reverse_string_type1 {
 		else
 		{
 			System.out.println("string is not palindrom");
-		}
-		
-		
-		
-		
-		
-		
-		
-		//USING STRINGBUILDER
-		StringBuilder sb = new StringBuilder("abc");
-		System.out.println(sb.reverse());
-
-		//using stringbuffer
-		StringBuffer sbd = new StringBuffer("xyz");
-		System.out.println(sbd.reverse());
+		}	
 	}
 
+}
+
+//javascript
+let s1 = "welcome";
+let rev = "";
+
+for(let i=s1.length-1;i>=0;i--)
+{
+  rev = rev + s1.charAt(i);
+}
+console.log(rev);
+
+if(s1===rev)
+{
+  console.log("palindrome");
+}
+else
+{
+  console.log("not palindrome");
 }
