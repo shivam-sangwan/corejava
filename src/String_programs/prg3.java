@@ -89,6 +89,30 @@ public class prg3 {
 
 }
 
+        //javascript: remove white spaces from a string
+		let s1 = "This is a really simple sentence "; 
+		let s2 ="";
+        for(let k of s1)
+        {
+          if(k !== ' ')
+          {
+            s2 = s2+k;
+          }
+        }
+        console.log(s2);
+
+        //javascript: count occurences of a character in a string
+		let s1 = "This is a really simple sentence "; 
+		let c = 0;
+        for(let k of s1)
+        {
+          if(k === 'a')
+          {
+            c++;
+          }
+        }
+        console.log(c);
+
         //javascript: count words in a string
 		let s1 = "This is a really simple sentence"; 
 		let a = s1.split(" ");
