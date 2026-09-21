@@ -21,3 +21,18 @@ public class prg8_reverse_each_word {
 	}
 
 }
+
+        //javascript
+        let s1 = "This is a really simple sentence"; 
+		let a = s1.split(" ");
+		let s2 = "",s3= "";
+		for(let w of a)
+		{
+			for(let j=w.length-1;j>=0;j--)
+			{
+				s2 = s2 + w[j];
+			}
+			s3 = s3 + s2 + " ";
+			s2 ="";
+		}
+		console.log(s3);
