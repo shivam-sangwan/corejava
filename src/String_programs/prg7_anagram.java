@@ -62,3 +62,36 @@ public class prg7_anagram {
 	}
 
 }
+
+//javascript
+let st1 = "Brag";
+let st2 = "Grab";
+
+// Check length
+if (st1.length !== st2.length)
+{
+    console.log("not anagram");
+}
+else 
+{
+    let a = st1.toLowerCase().split("");
+    let b = st2.toLowerCase().split("");
+
+    // Sort both arrays
+    a.sort();
+    b.sort();
+
+    let flag = true;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            flag = false;
+            break;
+        }
+    }
+
+    if (flag === true) {
+        console.log("anagram");
+    } else {
+        console.log("not anagram");
+    }
+}
