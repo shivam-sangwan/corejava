@@ -25,3 +25,23 @@ public class prg6_vowel_consonant {
 	}
 
 }
+
+
+//javascript
+let s1  = "This is a really simple sEntence";
+let s2 = s1.toLowerCase();
+let v=0,c=0;
+for(let k of s2)
+{
+  if(k==='a'||k==='e'||k==='i'||k==='o'||k==='u')
+  {
+    v++;
+  }
+  else if(k >= 'a' && k<= 'z')
+  {
+    c++;
+  }
+}
+
+console.log(v);
+console.log(c);
