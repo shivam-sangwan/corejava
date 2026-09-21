@@ -43,3 +43,27 @@ public class prg15_frequency_of_elements_in_string {
 	}
 
 }
+
+//javascript: print duplicate elements and their frequency
+let s1 = "programming";
+let hm = new Map();
+
+for(let k of s1)
+{
+  if(hm.has(k))
+  {
+    hm.set(k,hm.get(k)+1);
+  }
+  else
+  {
+    hm.set(k,1);
+  }
+}
+
+for(let k of hm.keys())
+{
+  if(hm.get(k)>1)
+  {
+    console.log(k, " ", hm.get(k));
+  }
+}
