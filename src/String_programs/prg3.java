@@ -72,19 +72,38 @@ public class prg3 {
         System.out.println("words in string are " + c1);
         
         //counting words without trim
-        String s5 = "welcome to java ";
-        int count1 =1;   //becoz one word(welcome) is already present before first space  
-        for(int i=0;i<s5.length()-1;i++)
-        {
-        	if((s5.charAt(i)==' ') && (s5.charAt(i+1) != ' '))
-        	{
-        		count1++;
-        	}
-        }
-        System.out.println("words in string are " + count1);
+        // String s5 = "welcome to java ";
+        // int count1 =1;   //becoz one word(welcome) is already present before first space  
+        // for(int i=0;i<s5.length()-1;i++)
+        // {
+        // 	if((s5.charAt(i)==' ') && (s5.charAt(i+1) != ' '))
+        // 	{
+        // 		count1++;
+        // 	}
+        // }
+        // System.out.println("words in string are " + count1);
       
         
         
 	}
 
 }
+
+        //javascript: count words in a string
+		let s1 = "This is a really simple sentence"; 
+		let a = s1.split(" ");
+        console.log(a.length);
+
+        //javascript: count words in a string without array
+		let s1 = "This is a really simple sentence "; 
+		let s2 = s1.trim();
+
+        let c = 1;
+        for(let k of s2)
+        {
+          if(k=== " ")
+          {
+            c++;
+          }
+        }
+        console.log("words: " + c);
