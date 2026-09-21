@@ -36,3 +36,28 @@ public class Count_Frequency_Elements_Hashmap {
 	}
 
 }
+
+//javascript
+let a = [1,1,2,3,4,3];
+
+let hm = new Map();
+
+for(let k of a)
+{
+  if(hm.has(k))
+  {
+    hm.set(k,hm.get(k)+1);
+  }
+  else
+  {
+    hm.set(k,1);
+  }
+}
+
+for(let k of hm.keys())
+{
+  if(hm.get(k)>1)
+  {
+    console.log("number " + k + " frequency " + hm.get(k));
+  }
+}
