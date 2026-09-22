@@ -58,3 +58,40 @@ public class prg9_smallest_largest {
 	}
 
 }
+
+//Javascript: 3rd largest
+let a = [2,3,8,6,1];
+let max = 0,max2=0,max3=0;
+
+for(let i=0;i<a.length;i++)
+{
+  if(a[i]>max)
+  {
+    max3=max2;
+    max2=max;
+    max=a[i];
+  }
+  else if(a[i]>max2)
+  {
+    max3=max2;
+    max2=a[i];
+  }
+  else if(a[i]>max3)
+  {
+    max3=a[i];
+  }
+}
+console.log(max + " "+max2+ " "+max3)
+
+//Javascript: smallest
+let a = [2,3,8,6,1];
+let min = a[0];
+
+for(let i=0;i<a.length;i++)
+{
+  if(a[i]<min)
+  {
+   min=a[i];
+  }
+}
+console.log(min)
