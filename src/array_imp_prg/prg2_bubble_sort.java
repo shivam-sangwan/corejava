@@ -29,3 +29,20 @@ public class prg2_bubble_sort {
 	}
 
 }
+
+//Javascript: bubble sort ascending
+let a = [2,3,8,6,1];
+
+for(let i=0;i<a.length;i++)
+{
+  for(let j=0;j<a.length-1;j++)
+  {
+    if(a[j]>a[j+1])
+    {
+      a[j+1]=a[j+1]+a[j];
+      a[j]=a[j+1]-a[j];
+      a[j+1]=a[j+1]-a[j];
+    }
+  }
+}
+console.log(a)
