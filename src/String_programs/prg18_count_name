@@ -1,0 +1,8 @@
+//print "name" count and remaning string
+let s = "nameshivamnamesangwanname";
+let a = s.split("name"); 
+let count = a.length-1;
+let s2 = a.join(""); //combining remaning elements in a string
+
+console.log(count);
+console.log(s2);
